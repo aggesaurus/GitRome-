@@ -1,0 +1,85 @@
+body{
+    font-family: Georgia;
+    font-size: 16px;
+    line-height:125%;
+}
+h1 {
+   color: blue;
+   font-family: Verdana;
+   font-size: 30px;
+   font-weight:bold;
+   margin-bottom: 20px;  
+}
+h2 {
+    color: blue;
+    font-family: Verdana;
+    font-size: 20px;
+    margin-bottom:10px;
+}     
+p {
+    margin-bottom: 10px;
+    
+
+}
+/* This ruleset applies for all ol tags inside main tags*/ 
+main ul {
+   list-style-type: square; 
+   list-style-position: inside;
+   margin-bottom: 15px;
+}
+main ol {
+    list-style-type: decimal; 
+    list-style-position: inside;
+    margin-bottom: 15px;
+}
+nav a {
+color: black;
+text-decoration: none; /* removes underscore */
+} 
+
+header {
+    background-color: lightgray;
+}
+/*
+select alla header-tags, all main-tags and all footer-tags for this rulest
+*/
+header, main, footer {
+    padding: 20px;
+
+}
+/* change all li tags inside nav so that they can be dispalyed beside each other*/
+nav li {
+    display: inline-block;
+}
+
+/* Add som space inside a tags in a nav */
+nav a {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:  10px;
+    padding-right: 10px;
+    border-right: 1px solid white;
+    color: #bbb;
+    font-family: Verdana;
+    text-decoration: none; /* removes underscore */
+}
+/* Change the look of a tags in the nav if you hover over them (have your mouse pointer abouve them*/
+nav a:hover:not(.active) {
+    color: #ddd;
+}
+nav {
+   background-color: blue; 
+}
+/* Select all tags that has the attribute class="active"*/
+.active {
+    color: white;
+}
+/* Style all images inside the main tag the same way*/
+main img {
+    display: block; /* default is inline for img */
+    margin-left: 40px; /* some spaces between img and text */
+    width: 25%;
+    float: right; /* float to the right of the text */
+    border-radius: 10px; /* rounded corners*/
+}
