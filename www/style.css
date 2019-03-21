@@ -1,0 +1,89 @@
+h1 {
+    color: blue;
+    font-family: Verdana;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+body {  
+    font-family: Georgia;
+    font-size: 16px;
+    line-height: 125%;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: blue;
+    font-family: Verdana;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: blue;
+    font-family: Verdana;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* This rulset*/
+main ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    margin-bottom: 15px;
+}
+
+main ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    margin-bottom: 15px;
+}
+
+header {
+  background-color: lightgrey;
+  
+}
+
+header, main, footer {
+    padding: 20px;
+}
+
+/*Change all li tags so they can displays beside each other*/
+nav li{
+    display: inline-block;
+}
+
+
+
+/*add some space inside a tags in a nav */
+nav a{
+    display: inline-block;
+    color: rgb(196, 167, 167);
+    text-decoration: none;
+    font-family: Verdana;
+    padding-right:10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    }
+
+nav a:hover:not(.active){
+    color:#ddd;
+}
+nav{
+    background-color: blue;
+}
+.active {
+    color: white;
+}
+
+main img{
+    display: block;
+    margin-left: 40px; /*Space between image and text */
+    width: 25%;
+    float: right;
+    border-radius: 10px;
+}
