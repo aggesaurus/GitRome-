@@ -1,89 +1,100 @@
+body {
+    /*background-color: lightgrey;*/
+    margin: 20px;
+}
+    
 h1 {
-    color: blue;
+    color: darkslateblue;
     font-family: Verdana;
     font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-body {  
-    font-family: Georgia;
-    font-size: 16px;
-    line-height: 125%;
-}
-
-p {
     margin-bottom: 10px;
 }
-
+    
 h2 {
-    color: blue;
-    font-family: Verdana;
-    font-size: 20px;
-    margin-bottom: 10px;
+    color: darkslateblue;
+    font-family: Verdana; 
+    font-size: 25px;
+    margin-bottom: 20px;
 }
 
 h3 {
-    color: blue;
-    font-family: Verdana;
-    font-size: 14px;
+    color: darkslateblue;
+    font-family: Verdana; 
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+    
+p {
+    font-family: Georgia;
+    font-size: 16px;
+    line-height: 125%;
     margin-bottom: 10px;
 }
-
-/* This rulset*/
+    
+    /* This rule set applies for all ul tags inside main tags*/
 main ul {
     list-style-type: circle;
     list-style-position: inside;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
-
+    
 main ol {
     list-style-type: decimal;
     list-style-position: inside;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
-
+    
 header {
-  background-color: lightgrey;
-  
+    background-color: rgb(205, 231, 205);
 }
-
+    
+    /* Select alla header tags,
+    all main tags, footer tags for this ruleset*/
 header, main, footer {
     padding: 20px;
 }
-
-/*Change all li tags so they can displays beside each other*/
-nav li{
+    
+    /* Change all li tags inside nav so
+    that they can be displayed beside each other*/
+    
+nav li {
     display: inline-block;
 }
-
-
-
-/*add some space inside a tags in a nav */
-nav a{
+    
+    /* Add some space inside a tags in a nav */
+    /* This rule set applies for all ul tags inside main tags*/
+nav a {
     display: inline-block;
-    color: rgb(196, 167, 167);
-    text-decoration: none;
-    font-family: Verdana;
-    padding-right:10px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
-    }
-
-nav a:hover:not(.active){
-    color:#ddd;
+    padding-right: 10px;
+    border-right: 1px solid white; /* Give little taste on the header*/
+    color: black;
+    text-decoration: none; /*Remove underscore*/
+    font-family: 'Gill Sans';
 }
-nav{
-    background-color: blue;
+    
+    /* Change the look of a tags in the nav
+    if you hover over then (have your mouse pointer above them*/
+nav a:hover {
+    color: crimson;
 }
+    
+nav {
+    background-color: darksalmon;
+}
+    
+    /* Select all tags that has atribute class="active" */
 .active {
-    color: white;
+    color: cadetblue;
 }
-
-main img{
-    display: block;
-    margin-left: 40px; /*Space between image and text */
-    width: 25%;
+    
+    /* Style all images inside the main tag the same way*/
+main img {
+    display: block; /* default is inline for image*/
+    width: 30%;
     float: right;
-    border-radius: 10px;
+    margin-left: 20px; /*some space between image and text*/
+    border-radius: 10px; /* rounded corners */
 }
